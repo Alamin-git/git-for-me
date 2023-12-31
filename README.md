@@ -1,2 +1,3 @@
 # git-for-me
-It's for me to learning Git &amp; GitHub
+
+It's for me to learn Git &amp; GitHub
