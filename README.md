@@ -2,13 +2,35 @@
 
 ## Git Initialize
 
-যে folder/ডিরেক্টরি/রিপোজিটরি(repo) তে git ট্রেকেং এর কাজ করবে সেখানে git এর কার্যক্রম শুরু করতে git initialize করার জন্য......
+যে folder/ডিরেক্টরি/রিপোজিটরি(repo) তে git ট্রেকেং এর কাজ করবে সেখানে git এর কার্যক্রম শুরু করতে git initialize করার জন্য....
 
-```git
+```bash
 git init
 ```
 
-It's for me to learn Git &amp; GitHub
+## Git Status
+
+git এর বর্তমান অবস্থা/status জানতে....
+
+```bash
+git status
+```
+
+## Git ADD (স্টেজিং/ট্র্যাকিং এরিয়াতে নেওয়া)
+
+নির্দিষ্ট কোন ফাইল স্টেজিং করতে....
+
+```bash
+git add fileName
+```
+
+লোকাল ডিরেক্টরির সব ফাইল স্টেজিং করতে....
+
+```bash
+git add --add
+$or
+git add -A
+```
 
 # H1
 
