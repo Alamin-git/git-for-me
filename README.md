@@ -1,6 +1,6 @@
-# Git-for-me
+# <span style="color:DodgerBlue"> **Git for me**</span>
 
-## Git Initialize
+## <span style="color:CornflowerBlue">Git Initialize</span>
 
 যে folder/ডিরেক্টরি/রিপোজিটরি(repo) তে git ট্রেকেং এর কাজ করবে সেখানে git এর কার্যক্রম শুরু করতে git initialize করার জন্য...
 
@@ -8,7 +8,7 @@
 git init
 ```
 
-## Git Status
+## <span style="color:CornflowerBlue">Git Status</span>
 
 git এর বর্তমান অবস্থা/status জানতে...
 
@@ -18,7 +18,7 @@ git status
 
 -  git status কমান্ডটি ব্যবহার করলে শুরুতে **_On branch main_** লেখা দেখতে পাওয়া যায়। এই main হলো বর্তমান ব্রাঞ্চের নাম। এবং এটাই প্রজেক্টের বর্তমান version.
 
-## Git ADD (স্টেজিং এরিয়াতে নেওয়া)
+## <span style="color:CornflowerBlue">Git Add</span> (স্টেজিং এরিয়াতে নেওয়া)
 
 নির্দিষ্ট কোন ফাইল স্টেজিং করতে...
 
@@ -42,7 +42,7 @@ git add .
 
 root folder এ থাকা অবস্থায় `git add -A` এবং `git add -A` একই কথা।
 
-## Git Commit
+## <span style="color:CornflowerBlue">Git Commit</span>
 
 commit হচ্ছে ফাইনাল সিদ্ধান্ত। স্টেজে রাখা file গুলো বা file এর চেন্জেস্ গুলো ঐ অবস্থার একটি version হিসেবে গিট লোকাল রিপোতে রাখতে। কমিটের সাথে একটি অর্থপূর্ণ ম্যাসেজ ও দিতে হই। যেন পরবর্তিতে বোঝা যায় কি কারণে কমিটটা করা হয়েছিল।
 
@@ -62,7 +62,21 @@ git commit -m "commit message"
 
 -  এইভাবে প্রতিটি কমিটে git এর একটি করে version তৈরি হতে থাকবে।
 
-## Git Log
+একটি কমিট থেকে অন্য কমিটে যেতে চাইলে...
+
+-  কোন ফাইল বা ফোল্ডার আনকমিট অবস্থায় থাকলে চেক আউট করতে পারব না।
+
+```bash
+git checkout commitId
+```
+
+লাষ্ট ভার্সন বা লাষ্ট কমিটে বা main virsion এ ফিরে যেতে...
+
+```bash
+git checkout main
+```
+
+## <span style="color:CornflowerBlue">Git Log</span>
 
 রিপোতে করা কমিট গুলো এবং অন্যান্য ডিটেইলস্ দেখতে। এখান থেকে কমিট ম্যাসেজ এবং কমিট **_ID_** জানতে পারব...
 
@@ -76,28 +90,44 @@ git log
 git log --oneline
 ```
 
-## Git Switch Commit
+## <span style="color:CornflowerBlue">Git Branch</span>
 
-একটি কমিট থেকে অন্য কমিটে যেতে চাইলে...
+নতুন ব্রাঞ্চ তৈরি করতে...
 
--  কোন ফাইল বা ফোল্ডার
+-  যেই ব্রাঞ্চ থেকে নতুন ব্রাঞ্চ তৈরি করা হবে। নতুন ব্রাঞ্চ ঐ ব্রাঞ্চেরই একটি কপি হিসেবে তৈরি হবে।
+-  ব্রাঞ্চকেও একটি ভার্সন হিসেবে ধরা যেতে পারে।
 
-1. First ordered list item
-2. Another item
-   -  Unordered sub-list.
-3. Actual numbers don't matter, just that it's a number
-   1. Ordered sub-list
-
--  Unordered list can use asterisks
-   [I'm an inline-style link](https://www.google.com)
-
-Blocks of code are either fenced by lines with three back-ticks ```, or are indented with four spaces.
-
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
+```bash
+git branch branchName
 ```
 
-Three or more...
+এক ব্রাঞ্চ থেকে অন্য ব্রাঞ্চে প্রবেশ করতে...
 
----
+```bash
+git checkout branchName
+#or
+git switch branchName
+```
+
+নতুন ব্রাঞ্চ তৈরি করে সাথে সাথে সেই ব্রাঞ্চে প্রবেশ করতে...
+
+```bash
+git checkout -b branchName
+```
+
+প্রজেক্টে থাকা সবগুলো ব্রাঞ্চের লিস্ট দেখতে...
+
+```bash
+git branch
+#or
+git branch --list
+```
+
+কোন ব্রাঞ্চ ডিলিট করতে...
+
+```bash
+git branch -D branchName
+```
+
+-  ব্রাঞ্চে কোন মোডিফিকেশন থাকলে সেটাও ডিলিট হয়ে যাবে।
+-  তবে যদি `-D` এর পরিবর্তে `-d` দেওয়া হয় তাহলে ঐ ব্রাঞ্চে কিছু আনকমিট থাকলে গিট warning দিবে।
