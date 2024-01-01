@@ -2,7 +2,7 @@
 
 ## Git Initialize
 
-যে folder/ডিরেক্টরি/রিপোজিটরি(repo) তে git ট্রেকেং এর কাজ করবে সেখানে git এর কার্যক্রম শুরু করতে git initialize করার জন্য....
+যে folder/ডিরেক্টরি/রিপোজিটরি(repo) তে git ট্রেকেং এর কাজ করবে সেখানে git এর কার্যক্রম শুরু করতে git initialize করার জন্য...
 
 ```bash
 git init
@@ -10,7 +10,7 @@ git init
 
 ## Git Status
 
-git এর বর্তমান অবস্থা/status জানতে....
+git এর বর্তমান অবস্থা/status জানতে...
 
 ```bash
 git status
@@ -20,13 +20,13 @@ git status
 
 ## Git ADD (স্টেজিং এরিয়াতে নেওয়া)
 
-নির্দিষ্ট কোন ফাইল স্টেজিং করতে....
+নির্দিষ্ট কোন ফাইল স্টেজিং করতে...
 
 ```bash
 git add fileName
 ```
 
-লোকাল ডিরেক্টরির সব ফাইল স্টেজিং করতে....
+লোকাল ডিরেক্টরির সব ফাইল স্টেজিং করতে...
 
 ```bash
 git add --all
@@ -34,7 +34,7 @@ git add --all
 git add -A
 ```
 
-বর্তমান যে folder আছি ঐ folder এর সবকিছু স্টেজিং করতে....
+বর্তমান যে folder আছি ঐ folder এর সবকিছু স্টেজিং করতে...
 
 ```bash
 git add .
@@ -64,27 +64,29 @@ git commit -m "commit message"
 
 ## Git Log
 
-রিপোতে করা কমিট গুলো এবং অন্যান্য ডিটেইলস্ দেখতে। এখান থেকে কমিট ম্যাসেজ এবং কমিট **_ID_** জানতে পারব।
+রিপোতে করা কমিট গুলো এবং অন্যান্য ডিটেইলস্ দেখতে। এখান থেকে কমিট ম্যাসেজ এবং কমিট **_ID_** জানতে পারব...
 
 ```bash
 git log
 ```
 
-# H1
+সুন্দর কম্প্যাক ভার্সনে ছোট করে প্রয়োজনীয় সব দেখতে...
 
-## H2
+```bash
+git log --oneline
+```
 
-### H3
+## Git Switch Commit
 
-#### H4
+একটি কমিট থেকে অন্য কমিটে যেতে চাইলে...
 
-##### H5
+-  কোন ফাইল বা ফোল্ডার
 
 1. First ordered list item
 2. Another item
-   ⋅⋅\* Unordered sub-list.
+   -  Unordered sub-list.
 3. Actual numbers don't matter, just that it's a number
-   ⋅⋅1. Ordered sub-list
+   1. Ordered sub-list
 
 -  Unordered list can use asterisks
    [I'm an inline-style link](https://www.google.com)
