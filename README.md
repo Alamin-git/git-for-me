@@ -1,4 +1,4 @@
-# <span style="color:DodgerBlue"> **Git for me**</span>
+# **Git for me**
 
 -  [Git Initialize](#git-initialize)
 -  [Git Status](#git-status)
@@ -6,8 +6,10 @@
 -  [Git Commit](#git-commit)
 -  [Git Log](#git-log)
 -  [Git Branch](#git-branch)
+   <br>
+   <br>
 
-## <span style="color:CornflowerBlue">Git Initialize</span>
+## Git Initialize
 
 **যে folder/ডিরেক্টরি/রিপোজিটরি(repo) তে git ট্রেকিং এর কাজ করবে সেখানে git এর কার্যক্রম শুরু করতে git initialize করার জন্য...**
 
@@ -15,7 +17,10 @@
 git init
 ```
 
-## <span style="color:CornflowerBlue">Git Status</span>
+<br>
+<br>
+
+## Git Status
 
 **git এর বর্তমান অবস্থা/status জানতে...**
 
@@ -25,7 +30,14 @@ git status
 
 > -  git status কমান্ডটি ব্যবহার করলে শুরুতে **_On branch main_** লেখা দেখতে পাওয়া যায়। এই main হলো বর্তমান ব্রাঞ্চের নাম। এবং এটাই প্রজেক্টের বর্তমান version.
 
-## <span style="color:CornflowerBlue">Git Add</span> (স্টেজিং এরিয়াতে নেওয়া)
+<br>
+<br>
+
+<img src="./img/map.png" alt="image">
+<br>
+<br>
+
+## Git Add (স্টেজিং এরিয়াতে নেওয়া)
 
 **নির্দিষ্ট কোন ফাইল স্টেজিং করতে...**
 
@@ -49,7 +61,10 @@ git add .
 
 > -  root folder এ থাকা অবস্থায় `git add -A` এবং `git add -A` একই কথা।
 
-## <span style="color:CornflowerBlue">Git Commit</span>
+<br>
+<br>
+
+## Git Commit
 
 **commit হচ্ছে ফাইনাল সিদ্ধান্ত। স্টেজে রাখা file গুলো বা file এর চেন্জেস্ গুলো ঐ অবস্থার একটি version হিসেবে গিট লোকাল রিপোতে রাখতে। কমিটের সাথে একটি অর্থপূর্ণ ম্যাসেজ ও দিতে হই। যেন পরবর্তিতে বোঝা যায় কি কারণে কমিটটা করা হয়েছিল।**
 
@@ -78,7 +93,10 @@ git checkout commitId
 git checkout main
 ```
 
-## <span style="color:CornflowerBlue">Git Log</span>
+<br>
+<br>
+
+## Git Log
 
 **রিপোতে করা কমিট গুলো এবং অন্যান্য ডিটেইলস্ দেখতে। এখান থেকে কমিট ম্যাসেজ এবং কমিট **_ID_** জানতে পারব...**
 
@@ -92,7 +110,10 @@ git log
 git log --oneline
 ```
 
-## <span style="color:CornflowerBlue">Git Branch</span>
+<br>
+<br>
+
+## Git Branch
 
 **নতুন ব্রাঞ্চ তৈরি করতে...**
 
@@ -133,3 +154,8 @@ git branch -D branchName
 
 > -  ব্রাঞ্চে কোন মোডিফিকেশন থাকলে সেটাও ডিলিট হয়ে যাবে।
 > -  তবে যদি `-D` এর পরিবর্তে `-d` দেওয়া হয় তাহলে ঐ ব্রাঞ্চে কিছু আনকমিট থাকলে গিট warning দিবে।
+
+<br>
+<br>
+
+##
