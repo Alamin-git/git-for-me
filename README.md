@@ -1,5 +1,7 @@
 # **Git for me**
 
+-  [Git Setup](#git-setup)
+-  [Git Configure](#git-configure)
 -  [Git Initialize](#git-initialize)
 -  [Git Status](#git-status)
 -  [Git Add](#git-add-স্টেজিং-এরিয়াতে-নেওয়া)
@@ -16,7 +18,34 @@
 
 ## Git Setup
 
-গিট ব্যবহার করতে হলে সিস্টেমে অবশ্যই [**_Git Install_**](https//:git-scm.com) করতে হবে।
+**গিট ব্যবহার করতে হলে সিস্টেমে অবশ্যই **_Git Install_** করতে হবে। [Git SCM](https://git-scm.com) থেকে গিট ডাউনলোড করে install করা লাগবে।**
+<br>
+
+**গিট ঠিকমত ‍সেটআপ হয়েছে কিনা চেক করতে গিট install দেয়ার পর যে কোনো Terminal এ কমান্ড দিতে হবে...**
+
+```bash
+git --version
+```
+
+**এই কমান্ডে গিটের ভার্সন দেখালে বুঝতে হবে ‍গিট ঠিকমত install হয়েছে। এখন গিটের সব কাজ করতে পারব।**
+
+## Git Configure
+
+**গিটের গ্লোবাল কিছু কনফিগারেশন করে নিতে হবে নাম ও ইমেল দিয়ে...**
+
+```bash
+git config --global user.name userName
+git config --global user.email userEmail
+```
+
+> -  এইটা ডিফল্ট ভাবে সব প্রজেক্টের জন্য।
+
+এখন যদি একাধিক প্রজেক্টের জন্য একাধিক Email থাকে তাহলে ঐ প্রজেক্টে git initialize করার পর শুধুমাত্র সেই প্রজেক্টের জন্য userName & userEmail দিয়ে সেটআপ করতে হবে...
+
+```bash
+git config user.name userName
+git config user.email userEmail
+```
 
 ## Git Initialize
 
