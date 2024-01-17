@@ -14,6 +14,10 @@
     <br>
     <br>
 
+## Git Setup
+
+গিট ব্যবহার করতে হলে সিস্টেমে অবশ্যই [**_Git Install_**](https//:git-scm.com) করতে হবে।
+
 ## Git Initialize
 
 **যে folder/ডিরেক্টরি/রিপোজিটরি(repo) তে git ট্রেকিং এর কাজ করবে সেখানে git এর কার্যক্রম শুরু করতে git initialize করার জন্য...**
