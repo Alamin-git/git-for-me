@@ -29,6 +29,9 @@ git --version
 
 **এই কমান্ডে গিটের ভার্সন দেখালে বুঝতে হবে ‍গিট ঠিকমত install হয়েছে। এখন গিটের সব কাজ করতে পারব।**
 
+<br>
+<br>
+
 ## Git Configure
 
 **গিটের গ্লোবাল কিছু কনফিগারেশন করে নিতে হবে নাম ও ইমেল দিয়ে...**
@@ -46,6 +49,9 @@ git config --global user.email userEmail
 git config user.name userName
 git config user.email userEmail
 ```
+
+<br>
+<br>
 
 ## Git Initialize
 
@@ -99,6 +105,9 @@ git add .
 
 > -  root folder এ থাকা অবস্থায় `git add -A` এবং `git add -A` একই কথা।
 
+<br>
+<br>
+<img src="./img/map-1.jpeg" alt="image">
 <br>
 <br>
 
@@ -255,3 +264,31 @@ git clone githubRepoUrl localDirectoryName(optional)
 > -  অনেক সময় টাইটেল ফিল্ডে আমার করা চেঞ্জ বা চেঞ্জের ম্যাসেজ বাই ডিফল্ট পূরণ করা থাকতে পারে।
 
 এখন মেইন কন্ট্রিবিউটর আমার চেন্জ মার্জ করলে আমিও সে প্রজেক্টের কন্ট্রিবিউটর লিস্টে এ্যাড হয়ে যাবো।
+
+<br>
+<br>
+
+## Git Restore
+
+**এটা মূলত লোকাল আনকমিটেড চেন্জেস গুলোকে আনডু (শেষ কমিটের অবস্থায়) করতে ব্যবহার হয়।**
+
+```bash
+git restore fileName
+#or
+git restore directoryName
+#0r
+git restore .
+```
+
+**চেন্জ করা কিছু যদি অলরেডি git add করে স্টেজিং এ নেয়া হলে তাকে অনডু করতে প্রথমে নিচের কমান্ডটা তারপর উপরের কমান্ড।**
+
+```bash
+git restore --staged fileName
+#or
+git restore --staged directoryName
+#or
+git restore --staged .
+```
+
+<br>
+<br>
